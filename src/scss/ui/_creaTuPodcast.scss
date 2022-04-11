@@ -10,4 +10,7 @@
             align-items: center;
         }
     }
+    &__heading{
+        @include m.headingBorder(v.$secundario, v.$primario);
+    }
 }
