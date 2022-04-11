@@ -573,7 +573,125 @@ section {
     margin: -1.4rem 0 0 0;
 }
 
-[class$=__btn] {
+.sect-planes {
+    background-color: #313c4e;
+}
+
+.sect-planes__heading {
+    font-size: 3.6rem;
+    display: inline-block;
+    margin-top: 5rem;
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    .sect-planes__heading {
+        margin-top: 0;
+    }
+}
+
+.sect-planes__heading::after {
+    content: "";
+    background-color: #84d9bc;
+    height: 1rem;
+    width: 102%;
+    display: block;
+    margin: -1.4rem 0 0 0;
+}
+
+.sect-planes__descripcion {
+    color: #FFFFFF;
+}
+
+.nuestros-planes {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .nuestros-planes {
+        flex-direction: row;
+        max-width: 80rem;
+        margin-inline: auto;
+        -webkit-margin-before: 10rem;
+        margin-block-start: 10rem;
+    }
+}
+
+.nuestros-planes__plan {
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    padding: 16rem 4rem 4rem 4rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+@media (min-width: 768px) {
+    .nuestros-planes__plan {
+        border: none;
+        transition-property: -webkit-transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        transition-duration: 0.3s;
+    }
+
+    .nuestros-planes__plan:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.nuestros-planes__plan--inicio {
+    background-image: url("../img/icono_inicio.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 2rem;
+    background-size: 10rem;
+}
+
+.nuestros-planes__plan--negocio {
+    background-color: #84d9bc;
+    background-image: url("../img/icono_negocio.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 2rem;
+    background-size: 10rem;
+    order: -1;
+}
+
+@media (min-width: 768px) {
+    .nuestros-planes__plan--negocio {
+        order: unset;
+        margin-top: -5rem;
+        margin-bottom: -5rem;
+        border-radius: 2rem;
+        padding-top: 21rem;
+        background-position: 50% 7rem;
+        z-index: 100;
+    }
+}
+
+.nuestros-planes__plan--pro {
+    background-image: url("../img/icono_pro.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 2rem;
+    background-size: 10rem;
+}
+
+.nuestros-planes__precio {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nuestros-planes__item {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.nuestros-planes__item:last-of-type {
+    margin-bottom: 0;
+}
+
+[class$=__btn], [class$=planes__btn] {
     background-color: #84d9bc;
     font-size: 2rem;
     padding: 1.2rem 4rem;
@@ -588,16 +706,21 @@ section {
     margin-top: 2rem;
 }
 
-[class$=__btn]:hover {
+[class$=__btn]:hover, [class$=planes__btn]:hover {
     cursor: pointer;
     background-color: #5dcda7;
 }
 
 @media (min-width: 768px) {
-    [class$=__btn] {
+    [class$=__btn], [class$=planes__btn] {
         width: auto;
         display: inline-block;
     }
+}
+
+[class$=planes__btn] {
+    border: 2px solid #FFFFFF;
+    display: block;
 }
 
 /*# sourceMappingURL=app.css.map */

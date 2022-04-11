@@ -5,3 +5,9 @@
     @include m.boton(v.$primario, v.$secundario);
     margin-top: 2rem;
 }
+
+[class$="planes__btn"]{
+    @extend [class$="__btn"];
+    border: 2px solid v.$blanco;
+    display: block;
+}
