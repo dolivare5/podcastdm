@@ -7,6 +7,12 @@
     }
 }
 
+@mixin telefonoMediano {
+    @media (min-width: 380px) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (min-width: v.$tablet) {
         @content;
@@ -49,4 +55,13 @@
     display: grid;
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin bgImage($url, $colorDegradado){
+    min-height: 90vh;
+    background-image: linear-gradient($colorDegradado 0%, $colorDegradado 100%), url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
