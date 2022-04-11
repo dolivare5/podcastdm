@@ -608,7 +608,7 @@ section {
     flex-direction: column;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .nuestros-planes {
         flex-direction: row;
         max-width: 80rem;
@@ -625,7 +625,7 @@ section {
     border-bottom: 1px solid #e1e1e1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .nuestros-planes__plan {
         border: none;
         transition-property: -webkit-transform;
@@ -656,7 +656,7 @@ section {
     order: -1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .nuestros-planes__plan--negocio {
         order: unset;
         margin-top: -5rem;
@@ -739,7 +739,7 @@ section {
     position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .sect-testimoniales__testimonial {
         max-width: 70%;
     }

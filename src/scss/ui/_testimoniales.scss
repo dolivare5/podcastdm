@@ -27,7 +27,7 @@
         padding: 3rem;
         border-radius: 1.5rem;
         position: relative;
-        @include m.tablet{
+        @include m.desktop{
             max-width: 70%;
             &:nth-child(2){
                 margin-left: 10%;
