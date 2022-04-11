@@ -551,6 +551,28 @@ section {
     margin: -1.4rem 0 0 0;
 }
 
+.sect-estadisticas__heading {
+    font-size: 3.6rem;
+    display: inline-block;
+    margin-top: 5rem;
+    color: #313c4e;
+}
+
+@media (min-width: 768px) {
+    .sect-estadisticas__heading {
+        margin-top: 0;
+    }
+}
+
+.sect-estadisticas__heading::after {
+    content: "";
+    background-color: #84d9bc;
+    height: 1rem;
+    width: 102%;
+    display: block;
+    margin: -1.4rem 0 0 0;
+}
+
 [class$=__btn] {
     background-color: #84d9bc;
     font-size: 2rem;
